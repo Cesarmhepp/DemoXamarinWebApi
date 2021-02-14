@@ -28,6 +28,8 @@ caracteristicas de estas activadas.
 
 Adjunto video tutorial de como montar el IIS: https://www.youtube.com/watch?v=tSpQFuHCWbM&ab_channel=RickyIslam
 
+para probar su funcionalidad, abran el navegador y diriganse a "http://192.168.0.13:8088/api/users", si la aplicacion retorna algun valor es porque quedo montada.
+
 4)una vez montada la web api, Abran el proyecto con Visual Studio 2019, seleccionen "Establecer como proyecto de inicio" en "Movil.Android" y listo, la App deberia estar corriendo en conjunto con la WebApi.
 
 
