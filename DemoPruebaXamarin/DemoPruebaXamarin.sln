@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{B99A603C-AE5F-4504-805A-1D1E74224DE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movil.Android", "Movil\Movil.Android\Movil.Android.csproj", "{C9414739-0D4A-4606-8D1F-A0643172F17B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movil", "Movil\Movil\Movil.csproj", "{2FEEBB88-2B7B-4A41-A0CC-DA25FB4DF41A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B99A603C-AE5F-4504-805A-1D1E74224DE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B99A603C-AE5F-4504-805A-1D1E74224DE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B99A603C-AE5F-4504-805A-1D1E74224DE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B99A603C-AE5F-4504-805A-1D1E74224DE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9414739-0D4A-4606-8D1F-A0643172F17B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9414739-0D4A-4606-8D1F-A0643172F17B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9414739-0D4A-4606-8D1F-A0643172F17B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C9414739-0D4A-4606-8D1F-A0643172F17B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9414739-0D4A-4606-8D1F-A0643172F17B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9414739-0D4A-4606-8D1F-A0643172F17B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{2FEEBB88-2B7B-4A41-A0CC-DA25FB4DF41A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FEEBB88-2B7B-4A41-A0CC-DA25FB4DF41A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FEEBB88-2B7B-4A41-A0CC-DA25FB4DF41A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FEEBB88-2B7B-4A41-A0CC-DA25FB4DF41A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {31C5D1E2-C165-4165-8677-4C250494D8ED}
+	EndGlobalSection
+EndGlobal
