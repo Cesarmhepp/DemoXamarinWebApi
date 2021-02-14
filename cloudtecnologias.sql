@@ -40,9 +40,6 @@ CREATE TABLE `testuser` (
 
 INSERT INTO `testuser` (`CUSTOMER_ID`, `NAME`, `EMAIL`, `PASS`) VALUES
 (26, 'Amelia Watson', 'Amelia@amelia.com', '5e633a6d5746e05265c5a3dbc4e89d7de8f91ad422ebe44093d6ec4a48ac82e5'),
-(29, 'cesar', 'cesarmhepp@gmail.com', '5e633a6d5746e05265c5a3dbc4e89d7de8f91ad422ebe44093d6ec4a48ac82e5'),
-(31, 'Marco Muñoz', 'marcomhepp@gmail.com', '5e633a6d5746e05265c5a3dbc4e89d7de8f91ad422ebe44093d6ec4a48ac82e5'),
-(32, 'Katy Hepp', 'katy@gmail.com', '5e633a6d5746e05265c5a3dbc4e89d7de8f91ad422ebe44093d6ec4a48ac82e5'),
 (33, 'Felipe Abello', 'felipe@gmail.com', 'd9ee9477471c864ade2fb79ebf429bdfbeedfde1afcc74ec01044109907385a4'),
 (34, 'jose', 'jose@gmail.com', '5e633a6d5746e05265c5a3dbc4e89d7de8f91ad422ebe44093d6ec4a48ac82e5'),
 (35, 'ale', 'ale@gmail.com', 'd9ee9477471c864ade2fb79ebf429bdfbeedfde1afcc74ec01044109907385a4'),
