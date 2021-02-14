@@ -105,13 +105,6 @@ namespace Movil
                     await DisplayAlert("Input Error", "The field 'Password' and 'Confirm Password' are not equal", "OK");
                     return;
                 }
-
-
-
-
-
-
-
                 /*   var input = txtPass.Text;
                    var hasNumber = new Regex(@"[0-9]+");
                    var hasUpperChar = new Regex(@"[A-Z]+");
@@ -137,14 +130,20 @@ namespace Movil
                 HttpResponseMessage response = await client.PostAsync(url, content);
                 string result = await response.Content.ReadAsStringAsync();
                 Response responseData = JsonConvert.DeserializeObject<Response>(result,new JsonSerializerSettings {NullValueHandling=NullValueHandling.Ignore });
-                if (responseData.Status == 1)
+                if (responseData.Status == 2 )
                 {
-                    
-                    await Navigation.PopAsync();
+                    await DisplayAlert("Message", responseData.Message, "ok");
+                    await Navigation.PushModalAsync(new MainPage());
                     btnRegis.IsEnabled = true;
 
                 }
-                else
+                else if( responseData.Status == 1)
+                {
+                    await DisplayAlert("Message", responseData.Message, "ok");
+                    btnRegis.IsEnabled = true;
+                    return;
+                }
+                else if (responseData.Status == 0)
                 {
                     await DisplayAlert("Message", responseData.Message, "ok");
                     btnRegis.IsEnabled = true;

@@ -56,8 +56,9 @@ namespace WebApi.Controllers
             }
         }
         [ResponseType(typeof(Users))]
-        public string Post(Users us)
+        public Response Post(Users us)
         {
+            Response re = new Response();
             try
             {
                 string query1 = @"SELECT * from testuser where email='" + us.Email + "';";
@@ -67,9 +68,12 @@ namespace WebApi.Controllers
                 {
                     cmd1.CommandType = CommandType.Text;
                     da1.Fill(table1);
+                    
                     if (table1.Rows.Count==1)
                     {
-                        return "The Email already Exist";
+                        re.Message = "The Email Aready Exist";
+                        re.Status = 0;
+                        return re;
                     }
                     else
                     {
@@ -81,7 +85,9 @@ namespace WebApi.Controllers
                             cmd.CommandType = CommandType.Text;
                             da.Fill(table);
                         }
-                        return "Added Successfully";
+                        re.Message = "Added Successfully";
+                        re.Status = 2;
+                        return re;
                     }
                 }
 
@@ -89,7 +95,9 @@ namespace WebApi.Controllers
             catch (Exception)
             {
 
-                return "Failed to Add";
+                re.Message = "Failed to Add";
+                re.Status = 1;
+                return re;
             }
         }
 
